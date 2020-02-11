@@ -29,7 +29,7 @@ def mergesort(lst):
     left = mergesort(left)
     left.extend(mid)
     right = mergesort(right)
-    ret = merge(left, right)
+    ret = left + right #merge(left, right)
     return ret
 
 
